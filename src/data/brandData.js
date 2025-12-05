@@ -211,7 +211,8 @@ export const socialProof = {
 
 export const storeInfo = {
   location: "Lagos, Nigeria",
-  whatsapp: "+234 XXX XXX XXXX",
+  // TODO: Replace with actual WhatsApp number (e.g., "+2348012345678")
+  whatsapp: "+234XXXXXXXXXX",
   email: "zeenytrends@gmail.com",
   instagram: "https://www.instagram.com/zeenytrends",
   tiktok: "https://www.tiktok.com/@zeeny_trends",
