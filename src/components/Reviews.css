@@ -1,0 +1,188 @@
+.reviews {
+  background-color: var(--color-background);
+}
+
+.reviews-grid {
+  margin-bottom: var(--spacing-xxxl);
+}
+
+.review-card {
+  background: var(--color-secondary);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.reviewer-avatar {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-highlight));
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.reviewer-info {
+  flex: 1;
+}
+
+.reviewer-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.review-product {
+  font-size: 0.8rem;
+  color: var(--color-gray);
+}
+
+.review-rating {
+  display: flex;
+  gap: 2px;
+  margin-bottom: var(--spacing-md);
+}
+
+.star {
+  color: var(--color-accent);
+}
+
+.star.filled {
+  fill: var(--color-accent);
+}
+
+.review-text {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: var(--spacing-md);
+}
+
+.review-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 0.8rem;
+  color: #25D366;
+  font-weight: 600;
+}
+
+.social-proof-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d2d2d 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xxxl) var(--spacing-xl);
+  text-align: center;
+}
+
+.proof-content h3 {
+  color: var(--color-secondary);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: var(--spacing-md);
+}
+
+.proof-content p {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-xl);
+  font-size: 1.1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.social-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  text-align: center;
+  min-width: 180px;
+  transition: var(--transition-normal);
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.social-card svg {
+  margin-bottom: var(--spacing-sm);
+}
+
+.social-card.instagram svg {
+  color: #E4405F;
+}
+
+.social-card.tiktok svg {
+  color: #ffffff;
+}
+
+.social-card.facebook svg {
+  color: #1877F2;
+}
+
+.social-name {
+  display: block;
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.social-handle {
+  display: block;
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.social-followers {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .reviews-grid {
+    gap: var(--spacing-md);
+  }
+
+  .review-card {
+    padding: var(--spacing-lg);
+  }
+
+  .social-proof-banner {
+    padding: var(--spacing-xl);
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-card {
+    width: 100%;
+    max-width: 250px;
+  }
+}
